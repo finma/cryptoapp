@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 
 import type { CustomAppProps } from "next/app";
 import Head from "next/head";
+import { CryptoContext } from "src/context/CryptoContex";
 
 const App = (props: CustomAppProps) => {
   const getLayout =
@@ -15,7 +16,7 @@ const App = (props: CustomAppProps) => {
       <Head>
         <title>nexst</title>
       </Head>
-      {getLayout(<props.Component {...props.pageProps} />)}
+      <CryptoContext>{getLayout(<props.Component {...props.pageProps} />)}</CryptoContext>
     </>
   );
 };
