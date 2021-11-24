@@ -12,7 +12,7 @@ export const FluidLayout: CustomLayout = (page) => {
     <div className="grid grid-rows-[auto,1fr,auto] min-w-min min-h-screen dark:bg-black-custom">
       <Header />
       <div>
-        <main className="container m-auto">
+        <main>
           <LayoutErrorBoundary>{page}</LayoutErrorBoundary>
         </main>
       </div>

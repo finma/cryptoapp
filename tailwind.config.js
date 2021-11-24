@@ -8,6 +8,9 @@ module.exports = {
         "black-custom": "#14161a",
         gold: "#ffd700",
       },
+      backgroundImage: {
+        banner: "url('src/assets/img/banner.jpg')",
+      },
     },
   },
   variants: { extend: {} },

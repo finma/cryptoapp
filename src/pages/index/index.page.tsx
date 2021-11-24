@@ -1,11 +1,12 @@
 import type { CustomNextPage } from "next";
+import { Banner } from "src/component/Banner";
 import { FluidLayout } from "src/layout";
 
 const Index: CustomNextPage = () => {
   return (
-    <div>
-      <h1 className="text-white">Main Content</h1>
-    </div>
+    <>
+      <Banner />
+    </>
   );
 };
 
