@@ -23,16 +23,8 @@ module.exports = {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/display-name": "error",
-    "react/jsx-handler-names": [
-      "error",
-      {
-        eventHandlerPrefix: "handle",
-        eventHandlerPropPrefix: "on",
-        checkLocalVariables: true,
-        checkInlineFunction: true,
-      },
-    ],
-    "react/destructuring-assignment": ["error", "never"],
+    "react/jsx-handler-names": "off",
+    "react/destructuring-assignment": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "import/newline-after-import": "error",
