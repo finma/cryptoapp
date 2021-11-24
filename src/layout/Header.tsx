@@ -20,7 +20,7 @@ export const Header: VFC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <div>
+    <div className="sticky top-0 z-50">
       <nav className=" bg-white dark:bg-black-custom shadow">
         <div className="px-8 mx-auto max-w-7xl">
           <div className="flex justify-between items-center h-16">
