@@ -122,10 +122,12 @@ export const DataTable = () => {
                           scope="row"
                           style={{
                             display: "flex",
-                            gap: 15,
+                            gap: 30,
                           }}
                         >
-                          <Image src={row?.image} alt={row.name} width={50} height={50} />
+                          <div className="w-[50px] h-[50px]">
+                            <Image src={row?.image} alt={row.name} width={50} height={50} />
+                          </div>
                           <div style={{ display: "flex", flexDirection: "column" }}>
                             <span
                               style={{
@@ -139,13 +141,15 @@ export const DataTable = () => {
                           </div>
                         </TableCell>
                         <TableCell align="right">
-                          <NumberFormat
-                            value={row.current_price}
-                            prefix={`${symbol} `}
-                            thousandSeparator="."
-                            decimalSeparator=","
-                            displayType="text"
-                          />
+                          <span className="text-base">
+                            <NumberFormat
+                              value={row.current_price}
+                              prefix={`${symbol} `}
+                              thousandSeparator="."
+                              decimalSeparator=","
+                              displayType="text"
+                            />
+                          </span>
                         </TableCell>
                         <TableCell
                           align="right"
@@ -154,17 +158,21 @@ export const DataTable = () => {
                             fontWeight: 500,
                           }}
                         >
-                          {isProfit && "+"}
-                          {row.price_change_percentage_24h.toFixed(2)}%
+                          <span className="text-base">
+                            {isProfit && "+"}
+                            {row.price_change_percentage_24h.toFixed(2)}%
+                          </span>
                         </TableCell>
                         <TableCell align="right">
-                          <NumberFormat
-                            value={row.market_cap.toString().slice(0, -6)}
-                            prefix={`${symbol} `}
-                            thousandSeparator="."
-                            decimalSeparator=","
-                            displayType="text"
-                          />
+                          <span className="text-base">
+                            <NumberFormat
+                              value={row.market_cap.toString().slice(0, -6)}
+                              prefix={`${symbol} `}
+                              thousandSeparator="."
+                              decimalSeparator=","
+                              displayType="text"
+                            />
+                          </span>
                         </TableCell>
                       </TableRow>
                     );

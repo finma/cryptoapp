@@ -39,3 +39,12 @@ export const getCoinDetail = async (id: any) => {
 
   return res.data;
 };
+
+export const getHistoricalChart = async (id: any, days = 365, currency: string) => {
+  const url = `${ROOT_API}/${id}/market_chart?vs_currency=${currency}&days=${days}`;
+  const res = await axios({ url, method: "GET" }).catch((err: { response: any }) => {
+    return err.response;
+  });
+
+  return res.data;
+};

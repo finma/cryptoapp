@@ -9,13 +9,11 @@ import { LayoutErrorBoundary } from "./LayoutErrorBoundary";
  */
 export const FluidLayout: CustomLayout = (page) => {
   return (
-    <div className="grid grid-rows-[auto,1fr,auto] min-w-min min-h-screen dark:bg-black-custom">
+    <div className="w-full min-h-screen dark:bg-black-custom ">
       <Header />
-      <div>
-        <main>
-          <LayoutErrorBoundary>{page}</LayoutErrorBoundary>
-        </main>
-      </div>
+      <main>
+        <LayoutErrorBoundary>{page}</LayoutErrorBoundary>
+      </main>
       <Footer />
     </div>
   );

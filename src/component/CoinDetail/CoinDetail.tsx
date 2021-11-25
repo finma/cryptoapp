@@ -30,7 +30,7 @@ export const CoinDetail = () => {
   return (
     <div className="container flex flex-col md:flex-row md:space-x-6 min-h-screen">
       <CoinDetailSidebar coin={coin} symbol={symbol} currency={currency} />
-      <CoinInfo />
+      <CoinInfo coin={coin} />
     </div>
   );
 };
