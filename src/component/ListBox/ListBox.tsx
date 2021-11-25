@@ -6,10 +6,10 @@ export const ListBox = () => {
   const { currency, setCurrency } = CryptoState();
 
   return (
-    <div className=" w-24">
+    <div className="w-24 ">
       <Listbox value={currency} onChange={setCurrency}>
         <div className="relative mt-1">
-          <Listbox.Button className=" relative py-2 w-full sm:text-sm text-center text-white bg-black-custom rounded-lg border border-white shadow-md cursor-default focus:outline-none">
+          <Listbox.Button className="relative py-2 w-full sm:text-sm text-center text-white bg-black-custom rounded-lg border border-white shadow-md cursor-default focus:outline-none ">
             <span className="block truncate">{currency}</span>
           </Listbox.Button>
           <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
