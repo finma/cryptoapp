@@ -45,7 +45,7 @@ export const ReactCarousel = () => {
           const isProfit = coin?.price_change_percentage_24h >= 0;
 
           return (
-            <Link href={`/coins/${coin.id}`} key={coin.id}>
+            <Link href={`/coin/${coin.id}`} key={coin.id}>
               <a>
                 <div className="flex flex-col items-center text-white uppercase cursor-pointer">
                   <Image src={coin?.image} alt={coin.name} width={80} height={80} />

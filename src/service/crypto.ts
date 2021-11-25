@@ -30,3 +30,12 @@ export const getTrendingCoins = async (currency: string) => {
 
   return res.data;
 };
+
+export const getCoinDetail = async (id: any) => {
+  const url = `${ROOT_API}/${id}`;
+  const res = await axios({ url, method: "GET" }).catch((err: { response: any }) => {
+    return err.response;
+  });
+
+  return res.data;
+};

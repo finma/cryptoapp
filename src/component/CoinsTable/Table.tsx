@@ -112,7 +112,7 @@ export const DataTable = () => {
                     return (
                       <TableRow
                         onClick={() => {
-                          return router.push(`/coins/${row.id}`);
+                          return router.push(`/coin/${row.id}`);
                         }}
                         className={classes.row}
                         key={row.name}

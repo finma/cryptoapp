@@ -9,7 +9,7 @@ class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang="ja">
+      <Html lang="id" className="dark">
         <Head />
         <body>
           <Main />
