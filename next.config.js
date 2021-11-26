@@ -11,7 +11,7 @@ const nextConfig = {
   typescript: { ignoreDevErrors: true },
   poweredByHeader: false,
   images: {
-    domains: ["assets.coingecko.com"],
+    domains: ["assets.coingecko.com", "www.bing.com"],
   },
 };
 

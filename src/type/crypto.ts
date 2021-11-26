@@ -63,3 +63,17 @@ export interface CoinDetailTypes {
   symbol: string;
   tickers: any;
 }
+
+export interface NewsTypes {
+  name: string;
+  title: string;
+  description: string;
+  url: string;
+  image: {
+    thumbnail: {
+      contentUrl: string;
+      width: number;
+      height: number;
+    };
+  };
+}

@@ -6,7 +6,7 @@ import type { VFC } from "react";
  */
 export const Footer: VFC = () => {
   return (
-    <footer className="flex bottom-0 justify-center items-center h-[50px] text-white">
+    <footer className="flex relative bottom-0 justify-center items-center h-[50px] text-white">
       <p className="text-base">
         &copy; 2021 All Right Reserved.{" "}
         <Link href="https://github.com/finma/cryptoverse">

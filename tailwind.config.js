@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         "black-custom": "#14161a",
+        "black-card": "#1B1D22",
         gold: "#ffd700",
       },
       backgroundImage: {
