@@ -1,4 +1,7 @@
+/* eslint-disable import-access/jsdoc */
 import type { CustomNextPage } from "next";
+import { Footer } from "src/layout/Footer";
+import { Header } from "src/layout/Header";
 
 const About: CustomNextPage = () => {
   return (
