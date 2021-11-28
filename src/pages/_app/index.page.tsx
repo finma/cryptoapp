@@ -25,7 +25,7 @@ const App = (props: CustomAppProps) => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <title>nexst</title>
+        <title>Cryptoverse</title>
       </Head>
       <CryptoContext>{getLayout(<props.Component {...props.pageProps} />)}</CryptoContext>
     </>
