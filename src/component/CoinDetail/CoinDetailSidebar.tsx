@@ -28,7 +28,7 @@ export const CoinDetailSidebar = ({ coin, currency, symbol }: PropsTypes) => {
           />
         </p>
         <p className="text-lg font-medium ">
-          Current Price: &nbsp;
+          Market Cap: &nbsp;
           <NumberFormat
             value={coin?.market_data?.market_cap[currency.toLowerCase()]}
             prefix={`${symbol} `}
